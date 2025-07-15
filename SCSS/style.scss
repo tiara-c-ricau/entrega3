@@ -3,6 +3,12 @@ $primary-color: aliceblue;
 
 body{
     background-color: $primary-color;
+     display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
 }
 
 header{
@@ -39,12 +45,13 @@ main{
 
 
 form{
-  align-items: baseline;
-  background-color: azure;
+    display: flex;
+    justify-content: left;
+  background-color: $primary-color;
   color: black;
   border-radius: 10px;
-  border: 50px;
-  margin: 80px;
+  border: 20px;
+  margin: 300px;
   padding: 20px;
   width: 200px;
   height: 30px;
@@ -54,10 +61,10 @@ form{
 
 footer {
     background-color: $primary-color;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    width: 50%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: darkgrey;
     img{
@@ -66,7 +73,6 @@ footer {
         height: 80px;
     }
 }
-
 @mixin boton{
     background-color: darkolivegreen;
     color: black;
@@ -91,9 +97,21 @@ footer {
     100% { opacity: 1;}
 }
 
-video{
- display: flex;
-  align-items: center;
-  width: 10px;
-  height: 20px;
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    img {
+        width: 50%;
+    }
 }
