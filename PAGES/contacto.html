@@ -33,26 +33,23 @@
    </nav>
    </header>
 
+<main>
+  <form class="contact" action="../index.html">
+ <label for="exampleFormControlTextarea1" class="form-label">Nombre y apellido</label>
+  <input class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="nombre">
+  <label for="exampleFormControlTextarea1" class="form-label">Telefono</label>
+  <input class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="telefono">
+  <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+  <input class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="email">
+  <label for="exampleFormControlTextarea1" class="form-label">Direccion</label>
+  <input class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="direccion">
+  <label for="exampleFormControlTextarea1" class="form-label">Localidad</label>
+  <input class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="localidad">
 
-<main class="form">
-    <form action="ruta_de_destino.php" method="post">
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" name="nombre">
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email">
-
-  <label for="telefono">Telefono:</label>
-  <input type="text" id="telefono" name="telefono">
-
-  <label for="direccion">Direccion:</label>
-  <input type="text" id="direccion" name="direccion">
-
-  <label for="localidad">Localidad:</label>
-  <input type="text" id="localidad" name="localidad">
-
-  <textarea id="mensaje" name="mensaje" rows="4" cols="30">Motivo de contacto</textarea>
-
+  <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Motivo de contacto</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
   <button class="btn-primary" type="submit" >Enviar</button>
 
 </form>

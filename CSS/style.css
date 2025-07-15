@@ -1,9 +1,33 @@
+.info-menu {
+  background-color: beige;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 3px;
+  margin: 20px;
+  padding: 30px;
+}
+
+/* seguir editanto contacto.html y novedades.html */
 body {
   background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  height: auto;
 }
 
 header {
   background-color: aliceblue;
+}
+header nav {
+  background-color: antiquewhite;
+  font-family: cursive;
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  top: 0;
 }
 
 main {
@@ -18,7 +42,7 @@ main h2 {
   text-decoration: double;
 }
 main p {
-  background-color: bisque;
+  background-color: aliceblue;
   border-radius: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -30,35 +54,45 @@ main section {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
 }
+main .form {
+  background-color: aliceblue;
+}
 
 form {
-  align-items: baseline;
-  background-color: azure;
+  margin: auto;
+  bottom: 0%;
+  left: 5%;
+  background-color: aliceblue;
   color: black;
-  border-radius: 10px;
-  border: 50px;
-  margin: 80px;
-  padding: 20px;
-  width: 200px;
-  height: 30px;
-  box-shadow: 50px;
-  line-height: 0, 5;
+  border-radius: 20px;
+  border: 40px;
+  padding: 30px;
+  width: 450px;
+  height: 100px;
+  box-shadow: 300px;
+  line-height: 2;
 }
 
 footer {
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-end;
+  right: 10%;
+  bottom: 20%;
+  width: 70%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: darkgrey;
 }
 footer img {
+  background-color: burlywood;
   align-items: end;
   width: 120px;
   height: 80px;
 }
 
+/* botones */
 .btn-primary {
   background-color: darkolivegreen;
   color: black;
@@ -68,7 +102,7 @@ footer img {
 }
 
 .fadeIn {
-  color: red;
+  color: palevioletred;
   text-align: center;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
@@ -84,11 +118,22 @@ footer img {
     opacity: 1;
   }
 }
-video {
-  display: flex;
-  align-items: center;
-  width: 10px;
-  height: 20px;
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+    padding: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  img {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
