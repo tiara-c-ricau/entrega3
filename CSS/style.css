@@ -7,7 +7,22 @@
   padding: 30px;
 }
 
+.form-label {
+  padding: auto;
+  line-height: 2px;
+  background-color: aliceblue;
+  margin: 10px;
+}
+
+.form-control form-control-sm {
+  padding: 30px;
+  margin: 10px;
+}
+
 /* seguir editanto contacto.html y novedades.html */
+/* editar lugar de email mas chico para q sea responsive  */
+/* alejar email de footer  */
+/*  */
 body {
   background-color: aliceblue;
   display: flex;
@@ -22,8 +37,8 @@ header {
   background-color: aliceblue;
 }
 header nav {
-  background-color: antiquewhite;
-  font-family: cursive;
+  background-color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
   display: flex;
   justify-content: flex-end;
   float: right;
@@ -62,14 +77,13 @@ form {
   margin: auto;
   bottom: 0%;
   left: 5%;
-  background-color: aliceblue;
   color: black;
   border-radius: 20px;
   border: 40px;
   padding: 30px;
   width: 450px;
   height: 100px;
-  box-shadow: 300px;
+  box-shadow: 200px;
   line-height: 2;
 }
 
@@ -79,6 +93,7 @@ footer {
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
+  position: static;
   right: 10%;
   bottom: 20%;
   width: 70%;
@@ -118,21 +133,26 @@ footer img {
     opacity: 1;
   }
 }
-@media (min-width: 600px) {
-  body {
-    font-size: 18px;
-    padding: 20px;
+@media (max-width: 768px) {
+  footer {
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body, main, form {
+    padding-bottom: 200px;
   }
 }
 @media (min-width: 768px) {
   body {
     font-size: 20px;
-    padding: 30px;
+    padding: 20px;
     flex-direction: row;
     justify-content: space-between;
   }
   img {
-    width: 50%;
+    width: 30%;
   }
 }
 

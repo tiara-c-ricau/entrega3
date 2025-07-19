@@ -2,6 +2,9 @@ $primary-color: aliceblue;
 
 @import "variables";
 /* seguir editanto contacto.html y novedades.html */
+/* editar lugar de email mas chico para q sea responsive  */
+/* alejar email de footer  */
+/*  */
 body{
     background-color: $primary-color;
      display: flex;
@@ -15,8 +18,8 @@ body{
 header{
     background-color: $primary-color;
     nav{
-        background-color:antiquewhite; 
-        font-family: cursive;
+        background-color: $primary-color;
+        font-family: 'Times New Roman', Times, serif;
         display: flex;
         justify-content: flex-end;
         float: right;
@@ -53,18 +56,17 @@ main{
 }
 
 
-form{
- margin: auto;
+form{ 
+    margin: auto;
  bottom: 0%;
  left: 5%;
-  background-color: $primary-color;
-  color: black;
-  border-radius: 20px;
+ color: black;
+ border-radius: 20px;
   border: 40px;
   padding: 30px;
   width: 450px;
   height: 100px;
-  box-shadow: 300px;
+  box-shadow: 200px;
   line-height: 2;
 }
 
@@ -74,6 +76,7 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+    position: static;
     right: 10%;
     bottom: 20%;
     width: 70%;
@@ -111,21 +114,26 @@ footer {
     100% { opacity: 1;}
 }
 
-@media (min-width: 600px) {
-    body {
-        font-size: 18px;
-        padding: 20px;
+@media (max-width:768px) {
+    footer {
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    body, main , form {
+        padding-bottom: 200px;
     }
 }
 
 @media (min-width: 768px) {
     body {
         font-size: 20px;
-        padding: 30px;
+        padding: 20px;
         flex-direction: row;
         justify-content: space-between;
     }
     img {
-        width: 50%;
+        width: 30%;
     }
 }
