@@ -1,29 +1,20 @@
 $primary-color: aliceblue;
 
 @import "variables";
-/* seguir editanto contacto.html y novedades.html */
-/* editar lugar de email mas chico para q sea responsive  */
-/* alejar email de footer  */
-/*  */
+
 body{
     background-color: $primary-color;
-     display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    padding: 10px;
-    width: 100%;
-    height: auto;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header{
     background-color: $primary-color;
     nav{
-        background-color: $primary-color;
+        background-color:cadetblue;
         font-family: 'Times New Roman', Times, serif;
         display: flex;
         justify-content: flex-end;
-        float: right;
-        top: 0;
     }
 }
 main{
@@ -39,54 +30,46 @@ main{
     }
     p{
         background-color: $primary-color;
-        border-radius: 5px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     }
     section{
         text-align: center;
         color: black;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 100px;
+        margin-bottom: 150px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 20px;
-    }
-    .form{ 
-        background-color: $primary-color;
     }
 }
 
 
 form{ 
-    margin: auto;
- bottom: 0%;
- left: 5%;
- color: black;
- border-radius: 20px;
-  border: 40px;
-  padding: 30px;
-  width: 450px;
-  height: 100px;
-  box-shadow: 200px;
-  line-height: 2;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ max-width: 300px;
+ margin-top: 30px;
 }
 
 footer {
     background-color: $primary-color;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: static;
-    right: 10%;
-    bottom: 20%;
-    width: 70%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
     color: darkgrey;
     img{
         background-color: burlywood;
-        align-items: end;
+        align-items: center;
         width: 120px;
         height: 80px;
+    }
+    p{
+        color: black;
+    }
+    aside {
+        color: black;
     }
 }
 /* botones */
