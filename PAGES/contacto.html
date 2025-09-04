@@ -36,25 +36,40 @@
    </header>
 
 <main>
-  <form class="contact" action="../index.html">
- <label for="exampleFormControlTextarea1" class="form-label">Nombre y apellido</label>
-  <input class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="nombre">
-  <label for="exampleFormControlTextarea1" class="form-label">Telefono</label>
-  <input class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="telefono">
-  <label for="exampleFormControlTextarea1" class="form-label">Email</label>
-  <input class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="email">
-  <label for="exampleFormControlTextarea1" class="form-label">Direccion</label>
-  <input class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="direccion">
-  <label for="exampleFormControlTextarea1" class="form-label">Localidad</label>
-  <input class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="localidad">
-  <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Motivo de contacto</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-  <button class="btn-primary" type="submit" >Enviar</button>
+  <form id="contactForm" class="contact">
+  <label class="form-label">Nombre y apellido</label>
+  <input id="name" class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="nombre">
+  <small id="nameError" class="error"></small>
 
+  <label class="form-label">Teléfono</label>
+  <input id="phone" class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="telefono">
+  <small id="phoneError" class="error"></small>
+
+  <label class="form-label">Email</label>
+  <input id="email" class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="email">
+  <small id="emailError" class="error"></small>
+
+  <label class="form-label">Dirección</label>
+  <input id="address" class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="direccion">
+  <small id="addressError" class="error"></small>
+
+  <label class="form-label">Localidad</label>
+  <input id="city" class="form-control form-control-sm" type="text" placeholder="Escriba aqui.." aria-label="localidad">
+  <small id="cityError" class="error"></small>
+
+  <div class="mb-3">
+    <label class="form-label">Motivo de contacto</label>
+    <textarea id="message" class="form-control" rows="3"></textarea>
+    <small id="messageError" class="error"></small>
+  </div>
+
+  <button class="btn-primary" type="submit">Enviar</button>
 </form>
+
+<p id="formResponse"></p>
 </main>
+
+<script src="/JS/form.js"></script>
 </body>
 
 <footer>
@@ -73,4 +88,5 @@
      </footer>
      
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
 </html>

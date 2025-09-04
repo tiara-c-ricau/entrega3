@@ -133,4 +133,52 @@ footer aside {
   }
 }
 
+#chatbot {
+  position: fixed; 
+  bottom: 10px;          
+  right: 10px;          
+  width: 200px;          
+  max-width: 90%;        
+  background: greenyellow;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2); 
+  z-index: 9999;    
+}
+
+#messages {
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+#formResponse {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+.contador {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 30px 0;
+  padding: 10px;
+  border-bottom: 2px solid #0071e3;
+  display: inline-block;
+}
+
+
 /*# sourceMappingURL=style.css.map */
