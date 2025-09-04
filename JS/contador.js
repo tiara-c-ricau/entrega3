@@ -1,7 +1,5 @@
 const eventDate = new Date("September 9, 2025 10:00:00").getTime();
-
-
-  const timer = setInterval(() => {
+ const timer = setInterval(() => {
     const now = new Date().getTime();
     const distance = eventDate - now;
 
