@@ -44,13 +44,13 @@ function getBotResponse(input) {
 
 function saveChat(){
   localStorage.setItem("chatHistory", messages.innerHTML);
-}
+} 
 
 function loadChat(){
   const saved = localStorage.getItem("chatHistory") 
   if (saved) {
     messages.innerHTML = saved;
   }
-}
+} 
 
 window.onload = loadChat; 
