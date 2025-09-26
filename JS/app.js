@@ -59,11 +59,18 @@ function renderCarrito() {
 // Botón COTIZAR
 buyButton.addEventListener("click", () => {
   if (carrito.length === 0) {
-    alert("Agregá al menos un producto para cotizar.");
+    Swal.fire({
+      icon: "warning",
+      title: "Carrito vacío",
+      text: "Agregá al menos un producto para cotizar.",
+      confirmButtonText: "Entendido"
+    });
     return;
   }
   userFormContainer.style.display = "block";
 });
+
+
 
 // Enviar formulario
 userForm.addEventListener("submit", (e) => {
