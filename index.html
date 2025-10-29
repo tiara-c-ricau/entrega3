@@ -35,7 +35,7 @@
 
    <main>
   <div>
-    <h1>Bienvenidos!</h1>
+    <h1 class="minimal-title">Bienvenidos!</h1>
   </div>
 
   <div class="product-cards-container" id="productList"></div>
@@ -79,29 +79,49 @@
 </main>
 
   <!-- chatbot -->
-  <div id="chatbot">
-    <div id="messages"></div>
-    <input type="text" id="userInput" placeholder="Bienvenido">
-    <button type ="button" onclick="sendMessage()">Enviar</button>
+<!-- Botón flotante del chat -->
+<button id="chatToggle" class="chat-toggle">💬</button>
+
+<!-- Ventana del Chatbot -->
+<div id="chatbot" class="chat-window hidden">
+  <div class="chat-header">
+    <span>Asistente Apple</span>
+    <button id="closeChat" class="close-btn">✕</button>
   </div>
 
+  <div id="messages" class="chat-messages"></div>
 
-     </main>
-     
-     <footer>
-     <p class="item5"> Conoce mas acerca de los productos </p>
-     
-     <a href= "https://www.apple.com/la/buy/ar/" target="_blank">
-      <img class= "image" src="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202305280849" class="rounded float-start" alt="pagina oficial" > </a>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Escribe tu mensaje...">
+    <button type="button" onclick="sendMessage()">Enviar</button>
+  </div>
+</div>
+     <footer class="footer">
+  <p class="footer-text">Conoce más acerca de los productos</p>
 
+  <div class="footer-links">
+    <a href="https://www.apple.com/la/buy/ar/" target="_blank">
+      <img
+        src="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202305280849"
+        alt="Página oficial Apple"
+        class="footer-icon"
+      />
+    </a>
 
-     <a href="https://www.instagram.com/apple/" target="_blank">
-      <img class="image" src="https://i.pinimg.com/736x/0d/2d/c2/0d2dc2d6c6374498c9543135ed8cff30.jpg" class="rounded float-end" alt="instagram oficial"> </a>
+    <a href="https://www.instagram.com/apple/" target="_blank">
+      <img
+        src="https://i.pinimg.com/736x/0d/2d/c2/0d2dc2d6c6374498c9543135ed8cff30.jpg"
+        alt="Instagram oficial"
+        class="footer-icon"
+      />
+    </a>
+  </div>
 
-     <aside>
-        @ 2025 - Todos los derechos reservados
-     </aside>
-     </footer>
+  <aside class="footer-copy">
+    © 2025 - Todos los derechos reservados
+  </aside>
+</footer>
+
      
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
